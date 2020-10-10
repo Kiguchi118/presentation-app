@@ -1,0 +1,170 @@
+body {
+  font-family: "Helvetica Neue", Arial, "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans", Meiryo, sans-serif;
+}
+
+p {
+  font-size: 20px;
+}
+
+a {
+  color: #949494;
+  text-decoration: none;
+  display: inline-block;
+  border-radius: 50%;
+  font-size: 20px;
+  text-align: center;
+  padding: 6px 12px;
+  background-color: #fff3e0;
+  line-height: 1em;
+  transition: 0.3s;
+  box-shadow: 1px 1px 3px #666666;
+}
+
+a:hover {
+  background: #fff3e0;
+}
+
+ul,
+ol {
+  padding: 0.5em 0.5em 0.5em 2em;
+}
+ul li,
+ol li {
+  font-size: 25px;
+  line-height: 1.1;
+  padding: 0.5em 0;
+}
+
+.v-application ul {
+  padding-left: 0.5em !important;
+}
+
+.v-application a {
+  color: #707070 !important;
+}
+
+.main-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+.main-slide {
+  margin-right: 20px;
+}
+
+.fixed_btn_left {
+  position: fixed;
+  bottom: 60px;
+  left: 41%;
+  padding: 6px 40px;
+}
+.fixed_btn_right {
+  position: fixed;
+  bottom: 60px;
+  right: 45%;
+  padding: 6px 40px;
+}
+
+.comment-area {
+  width: 350px;
+  height: 400px;
+  overflow: scroll;
+  border: 1px solid #e7e7e7;
+  background-color: #ffffff;
+  box-shadow: 0 -20px 12px -12px #0003 inset;
+}
+
+.comment-area li {
+  font-size: 16px;
+  line-height: 18px;
+  list-style: none;
+  padding-left: 0;
+}
+.comment-time {
+  font-size: 13px;
+  color: #666666;
+  margin-right: 5px;
+}
+
+.delete-comment-btn {
+  position: fixed;
+  bottom: 64px;
+  right: 38%;
+}
+
+/* コメントの表示（画面横切る） */
+.comment-area-move ul {
+  position: fixed;
+  top: 80px;
+  width: 100%;
+  font-size: 24px;
+  text-align: center;
+  overflow: hidden;
+}
+
+.comment-area-move ul li {
+  margin: 0;
+  display: inline-block;
+  padding-left: 0;
+  white-space: nowrap;
+  line-height: 1em;
+  animation: commentMove 5s linear infinite;
+}
+.comment-area-move ul li {
+  display: inline;
+  margin: 0 300px 0 0;
+}
+@keyframes commentMove {
+  0% {
+    transform: translateX(30%);
+  }
+  100% {
+    transform: translateX(-100%);
+  }
+}
+
+.main-padding {
+  padding: 20px 30px;
+}
+
+.sub-padding {
+  padding: 0 10px;
+}
+
+.under-light-green {
+  background: linear-gradient(transparent 80%, #a5f8d5 80%);
+}
+
+.under-light-blue {
+  background: linear-gradient(transparent 80%, #9ffff7 80%);
+}
+
+.under-light-yellow {
+  background: linear-gradient(transparent 80%, #ebfc8d 80%);
+}
+
+.under-dark-pink {
+  background: linear-gradient(transparent 80%, #eba8fce7 80%);
+}
+
+.under-light-red {
+  background: linear-gradient(transparent 80%, #fcaba8e7 80%);
+}
+
+.top-back-color {
+  background-color: #c93d3d;
+}
+
+.parent {
+  position: relative;
+}
+
+.sentence-center {
+  position: absolute;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
